@@ -1,0 +1,107 @@
+{
+	"React TypeScript Function Component with Ref, Styled Component, Interface": {
+		"prefix": "rtfc-ref",
+		"body": [
+			"// React",
+			"import type { FC, ReactElement } from 'react';",
+			"import { memo, forwardRef } from 'react';",
+			"",
+			"// Interface",
+			"import ${1:Interface} from '${2:./index.d}';",
+			"",
+			"// Style",
+			"import ${3:Styled} from '${4:./styled}';",
+			"",
+			"const ${5:Component}: FC<${1:Interface}> = forwardRef<${6:HTMLDivElement}, ${1:Interface}>((props, ref): ReactElement<${1:Interface}> => {",
+			"    return <${3:Styled} ref={ref} {...props} />",
+			"});",
+			"",
+			"${5:Component}.displayName = \"${5:Component}\";",
+			"",
+			"export type {",
+			"    ${1:Interface}",
+			"}",
+			"export default memo(${5:Component});"
+		],
+		"description": "React TypeScript Function Component with Ref, Styled Component, Interface"
+	},
+	"React TypeScript Function Component with Styled Component, Interface": {
+		"prefix": "rtfc",
+		"body": [
+			"// React",
+			"import type { FC, ReactElement } from 'react';",
+			"import { memo } from 'react';",
+			"",
+			"// Interface",
+			"import ${1:Interface} from '${2:./index.d}';",
+			"",
+			"// Styled",
+			"import ${3:Styled} from '${4:./styled}';",
+			"",
+			"const ${5:Component}: FC<${1:Interface}> = ({",
+			"    ...rest",
+			"}): ReactElement<${1:Interface}> => {",
+			"    return(",
+			"        <${3:Styled} {...rest} />",
+			"    );",
+			"};",
+			"",
+			"export type {",
+			"    ${1:Interface}",
+			"}",
+			"export default memo(${5:Component});"
+		],
+		"description": "React TypeScript Function Component with Styled Component, Interface"
+	},
+	"interface": {
+		"prefix": "interface",
+		"body": [
+			"import type { ReactNode } from 'react';",
+			"",
+			"export ${1:default} interface ${2:IInterface} {",
+			"  children?: ReactNode;",
+			"  ${3}",
+			"}"
+		],
+		"description": "interface"
+	},
+	"Styled Component": {
+		"prefix": "styled",
+		"body": [
+			"import styled, { css } from 'styled-components';",
+			"import useTheme from 'hooks/useTheme';",
+			"",
+			"const ${1:Styled} = styled.div(() => {",
+			"    const { spacing, colors, border, font, breakpoints } = useTheme();",
+			"",
+			"    return css`",
+			"      ${2}",
+			"    `;",
+			"});",
+			"",
+			"export default ${1:Styled};"
+		],
+		"description": "Styled Component"
+	},
+	"Slick Arrow Styled CSS": {
+		"prefix": "styled-arrow",
+		"body": [
+			".slick-arrow {",
+			"    position: absolute;",
+			"    top: 50%;",
+			"    transform: translateY(-50%);",
+			"    z-index: 1;",
+			"    font-size: ${font.size.large};",
+			"",
+			"    &.slick-prev {",
+			"        left: 0;",
+			"    }",
+			"",
+			"    &.slick-next {",
+			"        right: 0;",
+			"    }",
+			"}"
+		],
+		"description": "Slick Arrow Styled CSS"
+	}
+}

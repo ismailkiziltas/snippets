@@ -1,0 +1,48 @@
+{
+	"React TypeScript Ref Interface Definition": {
+		"prefix": "interface-ref",
+		"body": [
+			"import type { ComponentPropsWithoutRef } from 'react';",
+			"",
+			"export default interface ${1:Interface} extends ComponentPropsWithoutRef<'${2:div}'> {",
+			"    ${3}",
+			"}"
+		],
+		"description": "React TypeScript Ref Interface Definition"
+	},
+	"Interface for HTML Elements": {
+		"prefix": "interface-element",
+		"body": [
+			"import type { HtmlHTMLAttributes } from 'react';",
+			"",
+			"export default interface ${1:Interface} extends HtmlHTMLAttributes<${2:HTMLDivElement}> {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Interface for HTML Elements"
+	},
+	"Import Express with Types": {
+		"prefix": "imp-express",
+		"body": [
+			"import express, { Request, Response, NextFunction, IRouter } from 'express';"
+		],
+		"description": "Import Express with Types"
+	},
+	"Express Router use with type": {
+		"prefix": "router:use",
+		"body": [
+			"const router: IRouter = express.Router();"
+		],
+		"description": "Express Router use with type"
+	},
+	"Express route definiton for get type": {
+		"prefix": "route",
+		"body": [
+			"router.${1:get}('/', (req: Request, res: Response, next: NextFunction): void => {",
+			"    res.send(${2:\"Hello World\"})",
+			"    next();",
+			"})"
+		],
+		"description": "Express route definiton for get type"
+	}
+}
