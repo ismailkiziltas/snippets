@@ -53,18 +53,6 @@
 		],
 		"description": "React TypeScript Function Component with Styled Component, Interface"
 	},
-	"interface": {
-		"prefix": "interface",
-		"body": [
-			"import type { ReactNode } from 'react';",
-			"",
-			"export ${1:default} interface ${2:IInterface} {",
-			"  children?: ReactNode;",
-			"  ${3}",
-			"}"
-		],
-		"description": "interface"
-	},
 	"Styled Component": {
 		"prefix": "styled",
 		"body": [

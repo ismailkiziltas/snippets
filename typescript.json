@@ -21,6 +21,18 @@
 		],
 		"description": "Interface for HTML Elements"
 	},
+	"interface": {
+		"prefix": "interface",
+		"body": [
+			"import type { ReactNode } from 'react';",
+			"",
+			"export ${1:default} interface ${2:IInterface} {",
+			"  children?: ReactNode;",
+			"  ${3}",
+			"}"
+		],
+		"description": "interface"
+	},
 	"Import Express with Types": {
 		"prefix": "imp-express",
 		"body": [
@@ -29,7 +41,7 @@
 		"description": "Import Express with Types"
 	},
 	"Express Router use with type": {
-		"prefix": "router:use",
+		"prefix": "router-use",
 		"body": [
 			"const router: IRouter = express.Router();"
 		],
