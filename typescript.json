@@ -13,9 +13,9 @@
 	"Interface for HTML Elements": {
 		"prefix": "interface-element",
 		"body": [
-			"import type { HtmlHTMLAttributes } from 'react';",
+			"import type { HTMLAttributes } from 'react';",
 			"",
-			"export default interface ${1:Interface} extends HtmlHTMLAttributes<${2:HTMLDivElement}> {",
+			"export default interface ${1:Interface} extends HTMLAttributes<${2:HTMLElement}> {",
 			"  ${3}",
 			"}"
 		],
@@ -33,6 +33,17 @@
 		],
 		"description": "interface"
 	},
+	"function": {
+		"prefix": "fc",
+		"body": [
+			"const ${1:Function} = (${2:parameter}): ${3:void}  => {",
+			"  ${4}",
+			"};",
+			"",
+			"export default ${1:Function};"
+		],
+		"description": "function"
+	},
 	"Import Express with Types": {
 		"prefix": "imp-express",
 		"body": [
@@ -41,7 +52,7 @@
 		"description": "Import Express with Types"
 	},
 	"Express Router use with type": {
-		"prefix": "router-use",
+		"prefix": "router:use",
 		"body": [
 			"const router: IRouter = express.Router();"
 		],
