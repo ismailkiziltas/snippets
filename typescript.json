@@ -2,9 +2,9 @@
 	"React TypeScript Ref Interface Definition": {
 		"prefix": "interface-ref",
 		"body": [
-			"import type { ComponentPropsWithoutRef } from 'react';",
+			"import type { HTMLProps } from 'react';",
 			"",
-			"export default interface ${1:Interface} extends ComponentPropsWithoutRef<'${2:div}'> {",
+			"export default interface ${1:InterfaceName} extends HTMLProps<${2:HTMLElement}> {",
 			"    ${3}",
 			"}"
 		],
