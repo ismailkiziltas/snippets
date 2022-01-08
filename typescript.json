@@ -10,16 +10,16 @@
 		],
 		"description": "React TypeScript Ref Interface Definition"
 	},
-	"Interface for HTML Elements": {
+	"Create interface with HTMLElement props": {
 		"prefix": "interface-element",
 		"body": [
-			"import type { HTMLAttributes } from 'react';",
+			"import type { HTMLProps } from 'react';",
 			"",
-			"export default interface ${1:Interface} extends HTMLAttributes<${2:HTMLElement}> {",
+			"export default interface ${1:Interface} extends HTMLProps<${2:HTMLElement}> {",
 			"  ${3}",
 			"}"
 		],
-		"description": "Interface for HTML Elements"
+		"description": "Create interface with HTMLElement props"
 	},
 	"interface": {
 		"prefix": "interface",
