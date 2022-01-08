@@ -1,7 +1,8 @@
 ### React & TypeScript
 - rtfc:React TypeScript Function Component with Styled Component, Interface
 - rtfc-ref: React TypeScript Function Component with Ref, Styled Component, Interface
-- styled: Styled Component
+- styled: Create pure Styled Component
+- styled-interface: Create Styled component with interface
 - styled-arrow: Slick Arrow Styled CSS
 
 ### TypeScript
