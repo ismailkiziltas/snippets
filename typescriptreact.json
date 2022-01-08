@@ -76,23 +76,34 @@
 		],
 		"description": "function"
 	},
-	"Styled Component": {
+	"Create pure styled component": {
 		"prefix": "styled",
 		"body": [
 			"import styled, { css } from 'styled-components';",
-			"import useTheme from 'hooks/useTheme';",
 			"",
-			"const ${1:Styled} = styled.div(() => {",
-			"    const { spacing, colors, border, font, breakpoints } = useTheme();",
-			"",
-			"    return css`",
-			"      ${2}",
-			"    `;",
+			"const Styled = styled.${1:div}(() => {",
+			"    return css`${2}`;",
 			"});",
 			"",
-			"export default ${1:Styled};"
+			"export default Styled;"
 		],
-		"description": "Styled Component"
+		"description": "Create pure styled component"
+	},
+	"Create Styled Component With Interface": {
+		"prefix": "styled-interface",
+		"body": [
+			"import styled, { css } from 'styled-components';",
+			"import ${1:{ IProps }} from \"${2:.}\";",
+			"",
+			"const Styled = styled.${3:div}(({",
+			"${5}",
+			"}: ${4:Interface}) => {",
+			"    return css`${6}`;",
+			"});",
+			"",
+			"export default Styled;"
+		],
+		"description": "Create Styled Component With Interface"
 	},
 	"Slick Arrow Styled CSS": {
 		"prefix": "styled-arrow",
