@@ -1,4 +1,26 @@
 {
+	"React TypeScript Ref Interface Definition": {
+		"prefix": "interface-ref",
+		"body": [
+			"import type { HTMLProps } from 'react';",
+			"",
+			"export default interface ${1:InterfaceName} extends HTMLProps<${2:HTMLElement}> {",
+			"    ${3}",
+			"}"
+		],
+		"description": "React TypeScript Ref Interface Definition"
+	},
+	"Create interface with HTMLElement props": {
+		"prefix": "interface-element",
+		"body": [
+			"import type { HTMLProps } from 'react';",
+			"",
+			"export default interface ${1:Interface} extends HTMLProps<${2:HTMLElement}> {",
+			"  ${3}",
+			"}"
+		],
+		"description": "Create interface with HTMLElement props"
+	},
 	"React TypeScript Function Component with Ref, Styled Component, Interface": {
 		"prefix": "rtfc-ref",
 		"body": [
@@ -92,16 +114,16 @@
 	"Create Styled Component With Interface": {
 		"prefix": "styled-interface",
 		"body": [
-			"import styled, { css } from 'styled-components';",
-			"import ${1:{ IProps }} from \"${2:.}\";",
-			"",
-			"const Styled = styled.${3:div}(({",
-			"${5}",
-			"}: ${4:Interface}) => {",
-			"    return css`${6}`;",
-			"});",
-			"",
-			"export default Styled;"
+		  "import styled, { css } from 'styled-components';",
+		  "import { ${1:Interface} } from \"${2:.}\";",
+		  "",
+		  "const Styled = styled.${3:div}(({",
+		  "${5}",
+		  "}: ${1:Interface}) => {",
+		  "    return css`${6}`;",
+		  "});",
+		  "",
+		  "export default Styled;"
 		],
 		"description": "Create Styled Component With Interface"
 	},
