@@ -1,4 +1,24 @@
 {
+	"React & TypeScript Function Component": {
+		"prefix": "rtfc",
+		"body": [
+			"// React",
+			"import type { FC, ReactElement } from 'react';",
+			"import { memo, Fragment } from 'react';",
+			"",
+			"const Component: FC = (): ReactElement => {",
+			"    return(",
+			"        <Fragment>",
+			"",
+			"        </Fragment>",
+			"    );",
+			"};",
+			"",
+			"",
+			"export default memo(Component);"
+		],
+		"description": "React & TypeScript Function Component"
+	},
 	"React TypeScript Ref Interface Definition": {
 		"prefix": "interface-ref",
 		"body": [
@@ -47,33 +67,56 @@
 		],
 		"description": "React TypeScript Function Component with Ref, Styled Component, Interface"
 	},
-	"React TypeScript Function Component with Styled Component, Interface": {
-	"prefix": "rtfc",
-	"body": [
-		"// React",
-		"import type { FC, ReactElement } from 'react';",
-		"import { memo } from 'react';",
-		"",
-		"// Interface",
-		"import ${1:Interface} from '${2:./index.d}';",
-		"",
-		"// Styled",
-		"import ${3:Styled} from '${4:./styled}';",
-		"",
-		"const ${5:Component}: FC<${1:Interface}> = ({",
-		"    ...rest",
-		"}: ${1:Interface}): ReactElement<${1:Interface}> => {",
-		"    return(",
-		"        <${3:Styled} {...rest} />",
-		"    );",
-		"};",
-		"",
-		"export type {",
-		"    ${1:Interface}",
-		"}",
-		"export default memo(${5:Component});"
-	],
-	"description": "React TypeScript Function Component with Styled Component, Interface"
+	"React & TypeScript Function Component with Styled Component, Interface": {
+		"prefix": "rtfc-full",
+		"body": [
+			"// React",
+			"import type { FC, ReactElement } from 'react';",
+			"import { memo } from 'react';",
+			"",
+			"// Interface",
+			"import ${1:Interface} from '${2:./index.d}';",
+			"",
+			"// Styled",
+			"import ${3:Styled} from '${4:./styled}';",
+			"",
+			"const ${5:Component}: FC<${1:Interface}> = ({",
+			"    ...rest",
+			"}: ${1:Interface}): ReactElement<${1:Interface}> => {",
+			"    return(",
+			"        <${3:Styled} {...rest} />",
+			"    );",
+			"};",
+			"",
+			"export type {",
+			"    ${1:Interface}",
+			"}",
+			"export default memo(${5:Component});"
+		],
+		"description": "React TypeScript Function Component with Styled Component, Interface"
+	},
+	"React & TypeScript Function Component with Interface": {
+		"prefix": "rtfci",
+		"body": [
+			"// React",
+			"import type { FC, ReactElement } from 'react';",
+			"import { memo, Fragment } from 'react';",
+			"",
+			"// Interface",
+			"import ${1:Interface} from './index.d';",
+			"",
+			"const ${2:Component}: FC<${1:Interface}> = (props: Interface): ReactElement<${1:Interface}> => {",
+			"    return(",
+			"        <Fragment>${3}</Fragment>",
+			"    );",
+			"};",
+			"",
+			"export type {",
+			"    ${1:Interface}",
+			"}",
+			"export default memo(${2:Component});"
+		],
+		"description": "React & TypeScript Function Component with Interface"
 	},
 	"interface": {
 		"prefix": "interface",
@@ -114,16 +157,16 @@
 	"Create Styled Component With Interface": {
 		"prefix": "styled-interface",
 		"body": [
-		  "import styled, { css } from 'styled-components';",
-		  "import { ${1:Interface} } from \"${2:.}\";",
-		  "",
-		  "const Styled = styled.${3:div}(({",
-		  "${5}",
-		  "}: ${1:Interface}) => {",
-		  "    return css`${6}`;",
-		  "});",
-		  "",
-		  "export default Styled;"
+			"import styled, { css } from 'styled-components';",
+			"import { ${1:Interface} } from \"${2:.}\";",
+			"",
+			"const Styled = styled.${3:div}(({",
+			"${5}",
+			"}: ${1:Interface}) => {",
+			"    return css`${6}`;",
+			"});",
+			"",
+			"export default Styled;"
 		],
 		"description": "Create Styled Component With Interface"
 	},
