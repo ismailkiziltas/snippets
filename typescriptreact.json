@@ -6,16 +6,14 @@
 			"import type { FC, ReactElement } from 'react';",
 			"import { memo, Fragment } from 'react';",
 			"",
-			"const Component: FC = (): ReactElement => {",
+			"const ${1:Component}: FC = (): ReactElement => {",
 			"    return(",
-			"        <Fragment>",
-			"",
-			"        </Fragment>",
+			"        <Fragment>${2}</Fragment>",
 			"    );",
 			"};",
 			"",
 			"",
-			"export default memo(Component);"
+			"export default memo(${1:Component});"
 		],
 		"description": "React & TypeScript Function Component"
 	},
