@@ -1,5 +1,7 @@
 ### React & TypeScript
-- rtfc:React TypeScript Function Component with Styled Component, Interface
+- rtfc:React TypeScript Function Component
+- rtfci:React TypeScript Function Component with Interface
+- rtfc-full:React TypeScript Function Component with Styled Component, Interface
 - rtfc-ref: React TypeScript Function Component with Ref, Styled Component, Interface
 - styled: Create pure Styled Component
 - styled-interface: Create Styled component with interface
