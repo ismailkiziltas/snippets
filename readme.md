@@ -6,11 +6,15 @@
 - styled: Create pure Styled Component
 - styled-interface: Create Styled component with interface
 - styled-arrow: Slick Arrow Styled CSS
+- exp-def: Export default variable from folder
+- exp: Export variable from folder
 
 ### TypeScript
 - interface: interface
 - interface-ref: React TypeScript Ref Interface Definition
 - interface-element: Interface for HTML Elements
+- exp-def: Export default variable from folder
+- exp: Export variable from folder
 
 ## TypeScript & Node JS
 - imp-express: Import Express with Types
