@@ -17,6 +17,13 @@
 		],
 		"description": "Default Export from Folder"
 	},
+	"Export from Folder": {
+		"prefix": "exp",
+		"body": [
+			"export { ${1:Component} } from \"${2:./Folder}\";"
+		],
+		"description": "Export from Folder"
+	},
 	"Create interface with HTMLElement props": {
 		"prefix": "interface-element",
 		"body": [
