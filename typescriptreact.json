@@ -24,6 +24,13 @@
 		],
 		"description": "Default Export from Folder"
 	},
+	"Export from Folder": {
+		"prefix": "exp",
+		"body": [
+			"export { ${1:Component} } from \"${2:./Folder}\";"
+		],
+		"description": "Export from Folder"
+	},
 	"React TypeScript Ref Interface Definition": {
 		"prefix": "interface-ref",
 		"body": [
