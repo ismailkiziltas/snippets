@@ -10,6 +10,13 @@
 		],
 		"description": "React TypeScript Ref Interface Definition"
 	},
+	"Default Export from Folder": {
+		"prefix": "exp-def",
+		"body": [
+			"export { default as ${1:Component} } from \"${2:./Folder}\";"
+		],
+		"description": "Default Export from Folder"
+	},
 	"Create interface with HTMLElement props": {
 		"prefix": "interface-element",
 		"body": [
