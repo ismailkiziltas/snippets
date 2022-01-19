@@ -17,6 +17,13 @@
 		],
 		"description": "React & TypeScript Function Component"
 	},
+	"Default Export from Folder": {
+		"prefix": "exp-def",
+		"body": [
+			"export { default as ${1:Component} } from \"${2:./Folder}\";"
+		],
+		"description": "Default Export from Folder"
+	},
 	"React TypeScript Ref Interface Definition": {
 		"prefix": "interface-ref",
 		"body": [
