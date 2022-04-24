@@ -1,85 +1,13 @@
 {
-	"React TypeScript Ref Interface Definition": {
-		"prefix": "interface-ref",
-		"body": [
-			"import type { HTMLProps } from 'react';",
-			"",
-			"export default interface ${1:InterfaceName} extends HTMLProps<${2:HTMLElement}> {",
-			"    ${3}",
-			"}"
-		],
-		"description": "React TypeScript Ref Interface Definition"
-	},
-	"Default Export from Folder": {
-		"prefix": "exp-def",
-		"body": [
-			"export { default as ${1:Component} } from \"${2:./Folder}\";"
-		],
-		"description": "Default Export from Folder"
-	},
-	"Export from Folder": {
-		"prefix": "exp",
-		"body": [
-			"export { ${1:Component} } from \"${2:./Folder}\";"
-		],
-		"description": "Export from Folder"
-	},
-	"Create interface with HTMLElement props": {
-		"prefix": "interface-element",
-		"body": [
-			"import type { HTMLProps } from 'react';",
-			"",
-			"export default interface ${1:Interface} extends HTMLProps<${2:HTMLElement}> {",
-			"  ${3}",
-			"}"
-		],
-		"description": "Create interface with HTMLElement props"
-	},
-	"interface": {
-		"prefix": "interface",
-		"body": [
-			"import type { ReactNode } from 'react';",
-			"",
-			"export ${1:default} interface ${2:IInterface} {",
-			"  children?: ReactNode;",
-			"  ${3}",
-			"}"
-		],
-		"description": "interface"
-	},
-	"function": {
-		"prefix": "fc",
-		"body": [
-			"const ${1:Function} = (${2:parameter}): ${3:void}  => {",
-			"  ${4}",
-			"};",
-			"",
-			"export default ${1:Function};"
-		],
-		"description": "function"
-	},
-	"Import Express with Types": {
-		"prefix": "imp-express",
-		"body": [
-			"import express, { Request, Response, NextFunction, IRouter } from 'express';"
-		],
-		"description": "Import Express with Types"
-	},
-	"Express Router use with type": {
-		"prefix": "router:use",
-		"body": [
-			"const router: IRouter = express.Router();"
-		],
-		"description": "Express Router use with type"
-	},
-	"Express route definiton for get type": {
-		"prefix": "route",
-		"body": [
-			"router.${1:get}('/', (req: Request, res: Response, next: NextFunction): void => {",
-			"    res.send(${2:\"Hello World\"})",
-			"    next();",
-			"})"
-		],
-		"description": "Express route definiton for get type"
-	}
+    "Function Component Interface Definition With Ref": {
+        "prefix": "int-ref",
+        "body": [
+            "import type { RefAttributes, HTMLAttributes } from 'react';",
+            "",
+            "export default interface ${1:Interface} extends HTMLAttributes<${2:HTMLElement}>, RefAttributes<${2:HTMLElement}> {",
+            "    ${3}",
+            "}"
+        ],
+        "description": "Function Component Interface Definition With Ref"
+    }
 }
