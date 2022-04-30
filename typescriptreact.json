@@ -70,5 +70,25 @@
       "export default memo(${3:ComponentName});"
     ],
     "description": "Function Component With Interface"
-  }
+  },
+"Create Next.JS Page With TypeScript Supports": {
+  "prefix": "npage",
+  "body": [
+    "// Next",
+    "import type { NextPage } from \"next\";",
+    "",
+    "// React",
+    "import type { ReactElement } from \"react\";",
+    "import { memo } from \"react\";",
+    "",
+    "const ${1:PageName}: NextPage = (): ReactElement => {",
+    "  return (",
+    "    ${2}",
+    "  )",
+    "};",
+    "",
+    "export default memo(${1:PageName});"
+  ],
+  "description": "Create Next.JS Page With TypeScript Supports"
+}
 }
